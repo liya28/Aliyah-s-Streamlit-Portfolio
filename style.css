@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* { font-family: 'Poppins', sans-serif; }
+
+.stApp {
+    background: linear-gradient(135deg, #f6f0ff 0%, #fffaf0 50%, #f0f7ff 100%);
+    min-height: 100vh;
+}
+
+div[data-testid*="stVerticalBlock"], 
+div[data-testid*="stHorizontalBlock"],
+div[data-testid*="stColumn"],
+div[data-testid*="stMetric"], 
+div[data-testid*="stImage"],
+.block-container { 
+    background-color: transparent !important;
+    border: none !important; 
+    box-shadow: none !important; 
+}
+
+.st-emotion-cache-1r6r4v5, 
+.st-emotion-cache-12fmwza,
+.st-emotion-cache-10qg0g3, 
+.st-emotion-cache-u88bvk, 
+.st-emotion-cache-1y40jqw, 
+.st-emotion-cache-1v0k58p,
+.st-emotion-cache-1dp5vir, 
+.st-emotion-cache-1element-container {
+    background-color: transparent !important;
+    border: none !important; 
+    box-shadow: none !important; 
+}
+
+div[data-testid^="stBlock"] > div,
+div[data-testid="stVerticalBlock"] > div,
+div[data-testid="stHorizontalBlock"] > div {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.glass > div:first-child {
+    background-color: transparent !important;
+}
+
+
+.main .st-emotion-cache-6qob1p { 
+    background-color: transparent !important;
+}
+
+[data-testid="stSidebar"] > div:first-child > div:nth-child(2) {
+    background-color: transparent !important;
+}
+
+
+.glass {
+    padding: 12px; 
+    background: transparent; 
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(31, 38, 135, 0.08);
+    margin-bottom: 18px;
+}
+
+.hero {
+    padding: 10px;
+    border-radius: 14px;
+    margin-bottom: 18px;
+}
+
+.section-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #5544d6;
+    margin-bottom: 6px;
+}
+
+.muted {
+    color: #54607a;
+    font-size: 14px;
+}
+
+.badge {
+    display:inline-block;
+    padding:6px 10px;
+    margin: 4px;
+    border-radius: 999px;
+    background: rgba(85, 68, 214, 0.08);
+    color: #2f2b70;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.cvbtn { 
+    background: #6d5cff; color: white; padding: 8px 14px; border-radius: 10px; border: none;
+}
+.cvbtn:hover { opacity: 0.95; }
+
+
+@media (max-width: 768px) {
+    .glass { padding: 8px; } 
+}
+
+.typing {
+    font-weight: 600;
+    font-size: 18px;
+    color: #4b3aff;
+    border-right: 2px solid rgba(75,58,255,0.7);
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+        typing 3s steps(40, end),
+        blink 0.75s step-end forwards; 
+}
+@keyframes typing { 
+    from { width: 0 } 
+    to { width: 100% } 
+}
+@keyframes blink { 
+    from, 
+    to { border-color: transparent } 
+    50% { border-color: rgba(75,58,255,0.7); }
+    100% { border-color: transparent; }
+}
